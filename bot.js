@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'
+const prefix = '!'
 
 client.on('message', message => {
   console.log(`Emoko maid ready to pleasure you daddy ~`);
