@@ -1,31 +1,32 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const prefix = '.'
+const adminprefix = "+";
+const developers = ['482639461306335232'];
+
+console.log("YES YES AHHH! *cums*");
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
-  console.log('')
-  console.log('')
-  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-  console.log(`[Start] ${new Date()}`);
-  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════════════════════════════]╗');
-  console.log(`Logged in as * [ " ${client.user.username} " ]`);
-  console.log('')
-  console.log('Informations :')
-  console.log('')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log(`channels! [ " ${client.channels.size} " ]`);
-  console.log('╚[════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════]╗')
-  console.log(' Bot Is Online')
-  console.log('╚[════════════]╝')
-  console.log('')
-  console.log('')
-});
+    console.log(`Logged as ${client.user.tag}`)
+})
 
-client.login(process.env.BOT_TOKEN);
+
+client.on('message', message => {
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id !== "482639461306335232") return;
+
+  
+  if (message.content.startsWith(prefix + 'setwatching')) {
+  client.user.setActivity(argresult, {type: 'WATCHING'})
+     console.log('watching be' + argresult);
+    message.channel.sendMessage(`Watch Now: **${argresult}**`)
+} 
+
+ 
+  if (message.content.startsWith(prefix + 'setlis')) {
+  client.user.setActivity(argresult, {type: 'LISTENING'})
+     console.log('LISTENING be' + argresult);
+    message.channel.sendMessage(`LISTENING Now: **${argresult}**`)
+} 
+
+
+});
