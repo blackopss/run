@@ -1,16 +1,18 @@
-const prefix = "!";
-const developers = ['482639461306335232'];
+
 const Discord = require('discord.js');
  const RichEmbed = require('discord.js');
 const client = new Discord.Client();
-
-
+const prefix = '.'
 
 client.on('ready', () => {
-    console.log(`Logged as ${client.user.tag}`)
-console.log("YES YES AHHH! *cums*");
+  console.log(`Emoko maid ready to pleasure you daddy ~`);
+});
 
-})
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
 
 
 client.on('message', message => {
