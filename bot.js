@@ -1,7 +1,9 @@
-const adminprefix = "!";
+const prefix = "!";
 const developers = ['482639461306335232'];
 const Discord = require('discord.js');
  const RichEmbed = require('discord.js');
+const client = new Discord.Client();
+
 
 
 client.on('ready', () => {
