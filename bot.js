@@ -1,10 +1,13 @@
-const adminprefix = "+";
+const adminprefix = "!";
 const developers = ['482639461306335232'];
+const Discord = require('discord.js');
+ const RichEmbed = require('discord.js');
 
-console.log("YES YES AHHH! *cums*");
 
 client.on('ready', () => {
     console.log(`Logged as ${client.user.tag}`)
+console.log("YES YES AHHH! *cums*");
+
 })
 
 
@@ -30,3 +33,4 @@ client.on('message', message => {
 
 
 });
+client.login(process.env.BOT_TOKEN); 
