@@ -5,7 +5,7 @@ const developers = [`500260185122668564`];
 
 console.log("Paaaaartly");
 
-client.on('ready', () => {
+client.on('ready', (!) => {
     console.log(`Logged as ${client.user.tag}`)
 })
 
