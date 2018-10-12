@@ -42,3 +42,4 @@ if (message.content.startsWith(adminprefix + 'sa')) {
     message.channel.send(`**جاري تغيير الأفتار... :** `);
 }
 });
+client.login(process.env.BOT_TOKEN); 
