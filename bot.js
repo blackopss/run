@@ -42,4 +42,4 @@ if (message.content.startsWith(adminprefix + 'sa')) {
     message.channel.send(`**جاري تغيير الأفتار... :** `);
 }
 });
-partly.login('NDgyNjM5NDYxMzA2MzM1MjMy.DqJROA.8oYgKy993ZiPx8YmFi3aOQ6rX0E');
+partly.login("NDgyNjM5NDYxMzA2MzM1MjMy.DqJROA.8oYgKy993ZiPx8YmFi3aOQ6rX0E");
