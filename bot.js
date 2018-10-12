@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const adminprefix = "!";
-const developers = ['482639461306335232'];
+const developers = ['500260185122668564'];
 
 console.log("Paaaaartly");
 
@@ -43,4 +43,4 @@ if (message.content.startsWith(adminprefix + 'sa')) {
 }
 });
 
-client.login("NDgyNjM5NDYxMzA2MzM1MjMy.Dp_qxw.rMgFy_1cC4e3wc9KoW34YfQGyp0") 
+client.login("NDk4NTE3NzQ4OTE4Mzg2Njkw.DqIF4A.4msu-cg7dYBwogcO9rlS0bqLQxY") 
