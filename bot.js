@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const adminprefix = "!";
-const developers = [482639461306335232];
+const developers = ['482639461306335232'];
 
 console.log("Paaaaartly");
 
@@ -42,4 +42,5 @@ if (message.content.startsWith(adminprefix + 'sa')) {
     message.channel.send(`**جاري تغيير الأفتار... :** `);
 }
 });
-partly.login("NDgyNjM5NDYxMzA2MzM1MjMy.DqJROA.8oYgKy993ZiPx8YmFi3aOQ6rX0E");
+
+client.login("NDgyNjM5NDYxMzA2MzM1MjMy.DqLBbw.egV6sdvqxDBblzNk4GOrlbU6sIw") 
